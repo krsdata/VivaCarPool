@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="#C5CAE9"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/bookings_profile_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile_pc"/>
+
+            <TextView
+                android:id="@+id/bookings_booked_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="15dp"
+                android:text="Booked By"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked On"
+                android:textAlignment="center"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/bookings_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/09/2017"
+                android:textAlignment="center"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seats Booked"
+                android:textAlignment="center"
+                android:layout_weight="0.23"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/bookings_seats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAlignment="center"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/bookings_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTION"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/bookings_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:layout_weight="0.5"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_large">
+
+        <TextView
+            android:id="@+id/owner_bookings_action_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Action"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/grey_bg"
+            android:padding="@dimen/spacing_middle"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/owner_bookings_action_reject_booking"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="REJECT RESERVATION"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/owner_bookings_action_confirm_booking"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="MAKE PAYMENT"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <!--<Button
+            android:id="@+id/trav_action_review"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="REVIEW"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>-->
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

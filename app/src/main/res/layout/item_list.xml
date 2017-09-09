@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="#C5CAE9"
+    android:foreground="?attr/selectableItemBackground"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/list_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pc" />
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/list_avatar"
+            android:text="Android "
+            android:textColor="#000000"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/list_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_title"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/list_avatar"
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Place to dive into android programming"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="14sp" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/spacing_middle"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingTop="@dimen/spacing_middle">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pc" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/list_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Person name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/material_grey_800"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_clock" />
+
+                    <TextView
+                        android:id="@+id/text_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Posted on 17/02/2017"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/material_grey_600"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bt_more"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_more" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>-->
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_middle">
+
+            <ImageView
+                android:id="@+id/photo_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="250dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/grey_soft" />
+
+
+        <LinearLayout
+            android:id="@+id/item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <RelativeLayout
+                    android:id="@+id/from_loc_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium">
+
+                    <ImageView
+                        android:id="@+id/lis_from_location_img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/to" />
+
+                    <TextView
+                        android:id="@+id/lis_from_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Melbourne"
+                        android:textColor="@color/material_grey_800"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/lis_from_location_img"
+                        android:layout_toEndOf="@+id/lis_from_location_img" />
+
+
+                    <ImageView
+                        android:id="@+id/lis_to_location_img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/from"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/lis_from_location_img"/>
+
+                    <TextView
+                        android:id="@+id/lis_to_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sydney"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/material_grey_800"
+                        android:layout_below="@id/lis_from_location_img"
+                        android:layout_toRightOf="@+id/lis_to_location_img"
+                        android:layout_toEndOf="@+id/lis_to_location_img" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <RelativeLayout
+                    android:id="@+id/from_loc_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium">
+
+                    <TextView
+                        android:id="@+id/lis_from_date_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25/02/2017 - 15:00"
+                        android:textColor="@color/material_grey_800"
+                        />
+
+                    <TextView
+                        android:id="@+id/lis_to_date_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25/02/2017 - 21:00"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/material_grey_800"
+                        android:layout_below="@id/lis_from_date_time1"/>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/grey_soft" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/list_seats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Seats"
+                    android:textColor="@color/material_grey_800"
+                    android:layout_weight="0.5"
+                    android:gravity="center|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                     />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_dark_background" />
+
+
+            <TextView
+                    android:id="@+id/list_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUD 100"
+                    android:gravity="center|center_horizontal"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/material_grey_800"
+                    android:layout_toRightOf="@+id/list_seats" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/grey_soft" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="10dp">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/bt_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/airconditioner" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/bt_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pets" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/bt_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:src="@drawable/musicalnote" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

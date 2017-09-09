@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_large">
+
+        <TextView
+            android:id="@+id/traveller_action_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leave Review"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:maxHeight="48dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:rating="0" />
+
+       <!-- <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingbar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginRight="-3dp"
+            android:rating="0"
+            style="@style/Widget.MaterialRatingBar.RatingBar" />-->
+
+        <Button
+            android:id="@+id/traveller_action_submit_rating"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="REVIEW"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

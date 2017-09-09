@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_find_ride"
+            android:icon="@mipmap/ic_directions_car_black_24dp"
+            android:title="Find Rides" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@mipmap/ic_email_black_24dp"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@mipmap/ic_help_black_24dp"
+            android:title="Help" />
+        <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Share" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_cancel_black_24dp"
+            android:title="Logout" />-->
+
+        <item
+            android:id="@+id/nav_find_ride"
+            android:icon="@drawable/car"
+            android:title="Find Rides" />
+
+        <item
+            android:id="@+id/nav_my_rides"
+            android:icon="@drawable/ic_no_trips"
+            android:title="My Rides" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/notes"
+            android:title="Payment" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/letter"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/info1"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/exit"
+            android:title="Logout" />
+
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/add_ride_margin"
+    android:paddingRight="@dimen/add_ride_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="au.com.vivacar.vivacarpool.EditRideActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/edit_ride_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/edit_ride"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ride Details"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_ride_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/placeholder1"
+                    android:hint="@string/prompt_from"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_ride_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/placeholder"
+                    android:hint="@string/prompt_to"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/stopover_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_stop_over"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Stop over points"
+                        android:maxLines="1"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/edit_no_of_seats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/seats_array"
+                android:spinnerMode="dropdown"
+                android:layout_weight="0.5"/>
+
+            <EditText
+                android:id="@+id/edit_ride_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Cost per seat"
+                android:maxLines="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/add_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="1" >
+
+                <EditText
+                    android:id="@+id/edit_ride_onward_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Journey Date"
+                    android:windowSoftInputMode="stateHidden"
+                    android:maxLines="1"
+                    android:layout_weight="0.5"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/edit_ride_onward_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/edit_ride_onward_date"
+                    android:hint="Journey Time"
+                    android:layout_weight="0.5"
+                    android:windowSoftInputMode="stateHidden"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Method"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/edit_ride_pay_by"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10px"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/pay_by_array"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/owner_comments_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/text_owner_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/owner_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Comments" />
+
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:id="@+id/text_ammenities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ammenities"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/edit_check_ac"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="10px"
+
+                    android:layout_marginTop="10px"
+                    android:layout_below="@id/text_ammenities"
+                    android:text="AC"
+                    android:soundEffectsEnabled="true">
+                </CheckBox>
+
+
+                <CheckBox
+                    android:id="@+id/edit_check_pets"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginTop="10px"
+                    android:text="Pets"
+                    android:layout_toRightOf="@id/edit_check_ac"
+                    android:layout_alignBottom="@id/edit_check_ac"
+                    android:soundEffectsEnabled="true">
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/edit_check_music"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+
+                    android:layout_marginTop="10px"
+                    android:layout_marginRight="10px"
+                    android:text="Music"
+                    android:layout_toRightOf="@id/edit_check_pets"
+
+                    android:layout_alignBottom="@id/edit_check_ac"
+                    android:soundEffectsEnabled="true">
+                </CheckBox>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luggage"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/edit_ride_luggage"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10px"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/luggage_array"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Details"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+
+                    <EditText
+                        android:id="@+id/edit_ride_car_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Car Registration Number"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+
+                    <EditText
+                        android:id="@+id/edit_ride_car_make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Car Model"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/edit_ride_car_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Car Color"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/edit_ride_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Update Ride"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonshapeothers"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="#C5CAE9"
+    android:foreground="?attr/selectableItemBackground">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/RippleStyleBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ride_list_click_layout"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <RelativeLayout
+                        android:id="@+id/from_loc_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/lis_from_location_img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/to" />
+
+                        <TextView
+                            android:id="@+id/history_owner_from_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Melbourne"
+                            android:textColor="@color/material_grey_800"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/lis_from_location_img"
+                            android:layout_toEndOf="@+id/lis_from_location_img" />
+
+
+                        <ImageView
+                            android:id="@+id/lis_to_location_img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/from"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/lis_from_location_img"/>
+
+                        <TextView
+                            android:id="@+id/history_owner_to_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sydney"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/material_grey_800"
+                            android:layout_below="@id/lis_from_location_img"
+                            android:layout_toRightOf="@+id/lis_to_location_img"
+                            android:layout_toEndOf="@+id/lis_to_location_img" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                    <RelativeLayout
+                        android:id="@+id/from_loc_layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_medium">
+
+                        <TextView
+                            android:id="@+id/history_owner_fromdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25/02/2017 - 15:00"
+                            android:textColor="@color/material_grey_800"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seats Posted"
+                android:textAlignment="center"
+                android:layout_weight="0.23"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/history_owner_seats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAlignment="center"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seats Booked"
+                android:textAlignment="center"
+                android:layout_weight="0.23"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/history_owner_seats_booked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAlignment="center"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textAlignment="center"
+                android:layout_weight="0.23"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/history_owner_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textAlignment="center"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "755285496105",
+    "firebase_url": "https://vivacarpool.firebaseio.com",
+    "project_id": "vivacarpool",
+    "storage_bucket": "vivacarpool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755285496105:android:062ba106fd2bc963",
+        "android_client_info": {
+          "package_name": "au.com.vivacar.vivacarpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755285496105-okrtjo3lprluauf9esu636i4jdcmj3qt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "au.com.vivacar.vivacarpool",
+            "certificate_hash": "2130346b04a098831dfc286f42c1e0b4b50634b2"
+          }
+        },
+        {
+          "client_id": "755285496105-e63viusjci8bisb9f8up08dj1eru0nku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK0U6pAz7iPxlHz3YTKQBGgPFtpjcHNDg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755285496105-e63viusjci8bisb9f8up08dj1eru0nku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
